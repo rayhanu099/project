@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: o;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #060a1f;
+}
+#clock h2{
+    position: relative;
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-size: 1em;
+}
+#clock #time{
+    display: flex;
+}
+#clock #time div{
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+#clock #time div span{
+    position: relative;
+    display: block;
+    display: flex;
+    width: 100px;
+    height: 80px;
+    background: #2196f3;
+    color: #ffffff;
+    z-index: 10;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 1px rgba(0,0,0.2);
+}
+#clock #time div span:nth-child(2){
+    height: 30px;
+    text-transform: uppercase;
+}
+#clock #time div:last-child span:nth-child(2){
+    color: #ff0062;
+}
